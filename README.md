@@ -1,1 +1,1 @@
-# javascript-somity
+# javascript-somity-calculeter
