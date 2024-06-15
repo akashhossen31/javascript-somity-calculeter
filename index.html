@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Somity Calculeter</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container-fluid bg-info px-5 py-5 fs-4">
+      <div class="row">
+        <h1 class="text-center fs-1 fw-bold text-uppercase">Somity Form</h1>
+        <div class="col-6">
+          <label for="user_name">User Name:</label>
+          <input
+            class="form-control"
+            type="text"
+            id="user_name"
+            placeholder="Enter your Name"
+          />
+          <label for="phone">Mobile Number:</label>
+          <input
+            class="form-control"
+            type="text"
+            id="phone"
+            placeholder="Enter your Phone "
+          />
+          <label for="email">Email:</label>
+          <input
+            class="form-control"
+            type="email"
+            id="email"
+            placeholder="Enter a valid Email"
+          />
+          <button
+            class="btn btn-primary text-uppercase my-4"
+            type="submit"
+            onclick="calculete()"
+          >
+            Print Result
+          </button>
+        </div>
+        <div class="col-6">
+          <label for="address"> Address:</label>
+          <input
+            class="form-control"
+            type="text"
+            id="address"
+            placeholder="Enter your Address"
+          />
+          <label for="loan_amount">Loan Amount</label>
+          <input
+            class="form-control"
+            type="text"
+            id="loan_amount"
+            placeholder="Enter your Ammount"
+          />
+          <label for="">Loan Time:</label>
+          <select class="form-control" id="month">
+            <option value="6">6 month</option>
+            <option value="12" selected>1 year</option>
+            <option value="24">2 year</option>
+            <option value="36">3 year</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <section class="bg-primary-subtle pb-5">
+      <h1 class="text-center fw-bold text-uppercase pt-5 fs-3">somity output</h1>
+
+      <table class="w-100 t_padding" cellpadding="5px">
+        <tbody class="">
+          <tr>
+            <td class="w-25 fw-semibold">Name :</td>
+            <td id="showName"></td>
+          </tr>
+          <tr>
+            <td class="w-25 fw-semibold">Moblie Number :</td>
+            <td id="showphone"></td>
+          </tr>
+          <tr>
+            <td class="w-25 fw-semibold">Email :</td>
+            <td id="showemail"></td>
+          </tr>
+          <tr>
+            <td class="w-25 fw-semibold">Address :</td>
+            <td id="showaddress"></td>
+          </tr>
+          <tr>
+            <td class="w-25 fw-semibold">Loan Ammount :</td>
+            <td id="showloan_amount"></td>
+          </tr>
+          <tr>
+            <td class="w-25 fw-semibold">Loan Time :</td>
+            <td id="showmonth"></td>
+          </tr>
+          <tr>
+            <td class="w-25 fw-semibold">Interest :</td>
+            <td id="showInterest"></td>
+          </tr>
+          </tr>
+          <tr>
+            <td class="w-25 fw-semibold">InterestAmount :</td>
+            <td id="showInterestAmount"></td>
+          </tr>
+          </tr>
+          <tr>
+            <td class="w-25 fw-semibold"> TotalPayable :</td>
+            <td id="totalPayable"></td>
+          </tr>
+          </tr>
+          <tr>
+            <td class="w-25 fw-semibold">PermonthPayable :</td>
+            <td id="permonthPayable"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- <div class="output py-5 fs-4 bg-secondary-subtle">
+      <h1 class="text-center fw-bold text-uppercase py-5">
+        Somity form Result
+      </h1>
+      <p class="fw-bold pl">
+        Name : <span id="showName" class="fw-semibold m-auto"></span>
+      </p>
+      <p class="fw-bold pl">
+        Phone Number : <span id="showphone" class="fw-semibold"></span>
+      </p>
+      <p class="fw-bold pl">
+        Email : <span id="showemail" class="fw-semibold"></span>
+      </p>
+      <p class="fw-bold pl">
+        Address : <span id="showaddress" class="fw-semibold"></span>
+      </p>
+      <p class="fw-bold pl">
+        Loan Amount : <span id="showloan_amount" class="fw-semibold"></span>
+      </p>
+      <p class="fw-bold pl">
+        Loan Time : <span id="showmonth" class="fw-semibold">Month</span>
+      </p>
+      <p class="fw-bold pl">
+        Interest : <span id="showInterest" class="fw-semibold"></span>
+      </p>
+      <p class="fw-bold pl">
+        InterestAmount :
+        <span id="showInterestAmount" class="fw-semibold"></span>
+      </p>
+      <p class="fw-bold pl">
+        TotalPayable :
+        <span id="totalPayable" class="fw-semibold"></span>
+      </p>
+      <p class="fw-bold pl">
+        PermonthPayable :
+        <span id="permonthPayable" class="fw-semibold"></span>
+      </p>
+    </div> -->
+    <br /><br /><br /><br /><br /><br />
+    <script src="./asset/js/main.js"></script>
+    <script src="./asset/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
